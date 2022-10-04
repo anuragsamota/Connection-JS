@@ -32,6 +32,6 @@
 
         4.) deleteRequest() : Sends a delete request
         
-            This method takes two parameters :-
+            This method takes one parameter :-
                     
                         a.) endpoint : api endpoint url
