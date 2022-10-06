@@ -10,7 +10,7 @@ const getRequest = async (endpoint)=>{
         return data;
     });
     return res;
-}
+};
 
 
 
@@ -28,7 +28,7 @@ const postRequest = async (endpoint,data={})=>{
         return data;
     });
     return res;
-}
+};
 
 
 
@@ -47,7 +47,7 @@ const putRequest = async (endpoint,data={})=>{
         return data;
     });
     return res;
-}
+};
 
 
 
@@ -64,4 +64,4 @@ const deleteRequest = async (endpoint)=>{
         return data;
     });
     return res;
-}
+};
