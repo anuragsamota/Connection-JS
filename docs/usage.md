@@ -35,3 +35,7 @@
             This method takes one parameter :-
                     
                         a.) endpoint : api endpoint url
+
+# Note :-
+
+        1.) Always wrap this library functions within a async function since these are ajax functions
