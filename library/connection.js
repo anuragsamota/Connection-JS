@@ -1,10 +1,9 @@
-const getRequest = async (endpoint,filter = {})=>{
+const getRequest = async (endpoint)=>{
     const res = await fetch(endpoint,{
         mode: 'cors',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(filter),
     }).then(response=>{
         return response.json();
     }).then(data=>{
@@ -52,14 +51,13 @@ const putRequest = async (endpoint,data={})=>{
 
 
 
-const deleteRequest = async (endpoint,filter={})=>{
+const deleteRequest = async (endpoint)=>{
     const res = await fetch(endpoint,{
         method: 'DELETE',
         mode: 'cors',
         headers: {
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify(filter),
     }).then(response=>{
         return response.json();
     }).then(data=>{
