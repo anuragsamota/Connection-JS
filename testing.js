@@ -6,8 +6,7 @@ const deletebtn = document.getElementById('delete');
 
 let endpoint;
 let data = {
-    id : 1234,
-    name : 'test'
+    name : 'test1'
 };
 
 
@@ -26,12 +25,12 @@ getbtn.onclick = async function() {
 postbtn.onclick = async function() {
     getEndpoint();
     const res = await postRequest(endpoint,data);
-    console.log(res);
+    console.log(data,res);
 }
 putbtn.onclick = async function() {
     getEndpoint();
     const res = await putRequest(endpoint,data);
-    console.log(res);
+    console.log(data,res);
 }
 deletebtn.onclick = async function() {
     getEndpoint();

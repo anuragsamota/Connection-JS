@@ -2,7 +2,7 @@ const getRequest = async (endpoint)=>{
     const res = await fetch(endpoint,{
         mode: 'cors',
         headers: {
-            ContentType : 'application/json',
+            'Content-Type': 'application/json'
         },
     }).then(response=>{
         return response.json();
@@ -19,7 +19,7 @@ const postRequest = async (endpoint,data={})=>{
         method: 'POST',
         mode: 'cors',
         headers: {
-            ContentType : 'application/json',
+            'Content-Type': 'application/json',
         },
         body: JSON.stringify(data),
     }).then(response=>{
@@ -38,7 +38,7 @@ const putRequest = async (endpoint,data={})=>{
         method: 'PUT',
         mode: 'cors',
         headers: {
-            ContentType : 'application/json',
+            'Content-Type': 'application/json'
         },
         body: JSON.stringify(data),
     }).then(response=>{
@@ -56,7 +56,7 @@ const deleteRequest = async (endpoint)=>{
         method: 'DELETE',
         mode: 'cors',
         headers: {
-            ContentType : 'application/json',
+            'Content-Type': 'application/json'
         },
     }).then(response=>{
         return response.json();
