@@ -1,4 +1,4 @@
-# This library is a wrapper for  client side JS fetch api for simple backend communication.
+# This library is a wrapper for  client side JS fetch api for simple backend/api communication.
 
 
 To setup and use this library see <h1>docs/usage.md</h1>
